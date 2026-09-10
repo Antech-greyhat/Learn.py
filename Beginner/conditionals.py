@@ -47,9 +47,9 @@ if age >= 18:
   print('You are an adult') # Nothing shows up in the terminal
 # But what if you also want to print something if age is less than 18? That's where the else clause comes in. The else clause runs when the if condition is false. Here's the syntax for an if…else statement:
 
-if condition:
+#if condition:
 #    pass # Code to execute if condition is True
-else:
+#else:
 #    pass # Code to execute if condition is False
 
 age = 12
