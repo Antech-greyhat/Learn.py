@@ -58,3 +58,9 @@ def return_sub(x,y):
     return x - y
 my_sub= return_sub(30,19)
 print(my_sub) #output: 21
+
+# creating a function that has a default value:
+
+def greet_name(name='antony'):
+    return 'Hello + name'
+print(greet_name())
