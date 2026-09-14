@@ -9,8 +9,9 @@ print(type(county))
 print(type(pet))
 print(type(language))
 
-if not isinstance(name, str) and not isinstance(county, str) and not isinstance(pet,str) and not isinstance(language, str):
+if not isinstance(name, str) or not isinstance(county, str) or not isinstance(pet,str) or not isinstance(language, str):
     print('Should be a string')
 
 
 details = f'my name is {name} and am from {county} my pet is {pet} and i speak {language}'
+print(details)

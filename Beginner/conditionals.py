@@ -23,7 +23,7 @@ print(3 <= 4) # True
 # In Python, the most basic conditional is the if statement. Here's the basic syntax:
 # if condition:
 #     pass # Code to execute if condition is True
-# if statements start with the if keyword.
+# if statements start with these  if keyword.
 #
 # condition is an expression that evaluates to True or False, followed by a colon (:).
 #
@@ -37,7 +37,7 @@ if age >= 18:
 
 age = 18
 if age >= 18:
-print('You are an adult') # IndentationError: expected an indented block after 'if' statement on line 3
+  print('You are an adult') # IndentationError: expected an indented block after 'if' statement on line 3
 
 # Blocks are also found in loops and functions, which you'll learn about in future lessons.
 # Going back to our example, if age is anything less than 18, nothing is printed in the terminal:
@@ -56,13 +56,12 @@ age = 12
 if age >= 18:
     print('You are an adult')
 else:
-#     print('You are not an adult yet') # You are not an adult yet
+     print('You are not an adult yet') # You are not an adult yet
 # Note that you cannot place any statements between the if block and the else clause. The following code would raise a SyntaxError:
 
 age = 12
 if age >= 18:
      print('You are an adult')
-print('Almost there!')
 else: # SyntaxError: invalid syntax
      print('You are not an adult yet')
 # There might be situations in which you want to account for multiple conditions. To do that, Python lets you extend your if statement with the elif (else if) keyword.
@@ -96,4 +95,4 @@ elif age >= 13:
 elif age >= 3:
     print('You are a young child')
 else:
-#     print('You are a toddler or an infant') # You are a toddler or an infant
+    print('You are a toddler or an infant') # You are a toddler or an infant
