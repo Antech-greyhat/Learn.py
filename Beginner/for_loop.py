@@ -21,3 +21,7 @@ foods = ['apples', 'carrot', 'banana']
 for category in categories:
     for food in foods:
         print(category, food)
+
+kenya_languages = ['kamba', 'kikuyu', 'meru', 'masaai']
+for language in kenya_languages:
+    print(language)
