@@ -1,3 +1,4 @@
+# practice on loops and sequence
 def number_pattern(n):
     if type(n) is not int or isinstance(n, bool):
         return "Argument must be an integer value."
