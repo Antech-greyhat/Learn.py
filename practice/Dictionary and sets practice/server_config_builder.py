@@ -1,3 +1,4 @@
+# practice on dictionaries
 antech_server = {
     'os': 'kali_linux',
     'ip_address': '192.168.1.50',
