@@ -11,6 +11,9 @@ class Dog:
         self.times_feed += 1
         return f'{self.name} has been feed {self.times_feed} times'
 
+    def __str__(self) -> str:
+        return f'{self.name} is in {self.color} and eats {self.times_feed}'
+
 my_dog = Dog('antony','black')
 her_dog = Dog('joshua','blue')
 
@@ -26,3 +29,14 @@ print(her_dog.bark())
 print(my_dog.feed())
 print(her_dog.feed())
 print(my_dog.feed())
+
+print(getattr(my_dog,'name'))
+print(getattr(her_dog,'color'))
+print(hasattr(her_dog,'flue'))
+print(hasattr(my_dog,'name'))
+
+setattr(my_dog,'age',300)
+setattr(her_dog,'age',100)
+print(her_dog)
+print(my_dog.age)
+print(her_dog.age)
