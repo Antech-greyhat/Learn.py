@@ -1,5 +1,3 @@
-from os import read
-
 books = [
     {'title': '1982', 'author': 'George Orwell', 'read': True},
     {'title': 'Dune', 'author': 'Frank Herbert', 'read': False},

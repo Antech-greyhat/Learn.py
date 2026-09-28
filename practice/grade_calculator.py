@@ -12,7 +12,7 @@ def get_grade(score):
     else:
         print('Invalid score')
 
-    local_scope_variable = 'returns an error because is a local scope variable'
+    #local_scope_variable = 'returns an error because is a local scope variable'
 
     return score
 get_grade(38)
