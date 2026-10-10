@@ -14,7 +14,7 @@ import string
 import sys
 import time
 
-# ---------- Terminal setup ----------
+# ---------- This is the Terminal setup ----------
 os.system("")
 try:
     sys.stdout.reconfigure(encoding="utf-8")
