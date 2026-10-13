@@ -13,3 +13,20 @@ def linear_search(arr,target):
 # 2. Binary search is a more efficient algorithm for searching through a list of items.
 #The condition is that the list must be sorted in ascending order.
 #Binary search works by dividing the list in half and checking if the target value is in the middle of the list, the index of the target is returned. otherwise the algorith checks if the target value is in the left or right half of the list if no target value it returns -1.
+
+def binary_search(arr,target):
+    low = 0
+    high = len(arr) -1
+    while low <= high:
+        mid = (low + high) // 2
+        if arr[mid] == target:
+            return mid
+        elif arr[mid]< target:
+            low = mid + 1
+        else:
+            high = mid - 1
+    return -1
+
+#Time complexity of binary search is 0(log n) because the time it takes to search through the list grows logarithmically with the size in the list.
+#The space complexity in binary search is 0(1) because it doesn't require any additional space to search through the list.
+
