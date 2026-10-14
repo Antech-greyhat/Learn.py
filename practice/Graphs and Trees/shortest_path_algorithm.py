@@ -31,3 +31,14 @@ def shortest_path(matrix,start_node,target_node=None):
                 new_distance = distances[current] + distance
                 if new_distance < distances[node_no]:
                     distances[node_no] = new_distance
+                    paths[node_no] = paths[current] + [node_no]
+
+    targets = [target_node] if target_node is not None else range(n)
+    for node_no in targets:
+        if node_no == start_node or distances[node_no] == INF:
+            continue
+        string_path = (str(n) for n in paths[node_no])
+        path = ' -> '.join(string_path)
+        print(f'\n{start_node}-{node_no} distance: {distances[node_no]}\nPath: {path}')
+    return distances, paths
+shortest_path(adj_matrix, 0, 5)
