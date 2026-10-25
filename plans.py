@@ -1,12 +1,4 @@
 #!/usr/bin/env python3
-"""
-PLAN A to Z: CYBERSECURITY
-No matter which plan you try, you end up in cybersecurity.
-
-Run:  python plans.py      (Windows)
-      python3 plans.py     (Linux / macOS)
-No extra libraries needed.
-"""
 
 import os
 import random
@@ -68,14 +60,14 @@ def write(text):
 
 
 def type_print(text, col="", delay=TYPE_DELAY):
-    """Print text one character at a time."""
+
     for ch in text:
         write(f"{col}{ch}{RESET}")
         time.sleep(delay)
 
 
 def glitch(text):
-    """Return text with some characters swapped for noise."""
+
     return "".join(
         random.choice(NOISE) if ch != " " and random.random() < 0.3 else ch
         for ch in text
@@ -118,7 +110,7 @@ FONT = {
 
 
 def render_word(word):
-    """Turn a word into 5 rows of block letters."""
+
     rows = []
     for r in range(5):
         rows.append(" ".join(FONT[ch][r] for ch in word))
