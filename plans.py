@@ -6,7 +6,7 @@ import string
 import sys
 import time
 
-# ---------- This is the Terminal setup ----------
+#This is the Terminal setup 
 os.system("")
 try:
     sys.stdout.reconfigure(encoding="utf-8")
@@ -27,7 +27,7 @@ CYAN = color(51)
 MAGENTA = color(201)
 GREEN = color(46)
 
-# ---------- Config ----------
+#Config
 LINE_DELAY = 0.15      # delay between normal plan lines
 TYPE_DELAY = 0.03      # typing speed for "trying ..." lines
 DOT_DELAY = 0.45       # delay between dots
@@ -53,7 +53,7 @@ DETOURS = {
 NOISE = "#@%$&?01<>/\\|"
 
 
-# ---------- Helpers ----------
+#Helpers
 def write(text):
     sys.stdout.write(text)
     sys.stdout.flush()
@@ -95,7 +95,7 @@ def fail_line(letter, role, col):
     time.sleep(0.4)
 
 
-# ---------- Final banner ----------
+#Final banner
 FONT = {
     "C": [" ████", "█    ", "█    ", "█    ", " ████"],
     "Y": ["█   █", " █ █ ", "  █  ", "  █  ", "  █  "],
@@ -163,7 +163,7 @@ def final_message():
     blinking_cursor()
 
 
-# ---------- Main ----------
+#Main
 def main():
     for letter in string.ascii_uppercase:
         if letter in DETOURS:
